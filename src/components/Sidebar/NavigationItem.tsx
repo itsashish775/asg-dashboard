@@ -1,10 +1,21 @@
-import { FolderPlus, Library, Plus, Search } from "lucide-react";
+import {
+  Cog,
+  DollarSign,
+  FolderPlus,
+  LayoutDashboard,
+  Library,
+  MessageSquareWarning,
+  Plus,
+  Search,
+  Users,
+} from "lucide-react";
 import { Button } from "../ui/button";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import DemoPage from "../Dialogs/SearchDialog";
 import DialogSkeleton from "../Dialogs";
 import MyCustomForm from "../Dialogs/SearchDialog";
+import { replace, useNavigate } from "react-router-dom";
 
 interface NavigationItemProps {
   collapsed: boolean;
@@ -13,6 +24,7 @@ interface NavigationItemProps {
 
 const NavigationItem = ({ collapsed, onToggle }: NavigationItemProps) => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const dir = i18n.language === "ar" ? "rtl" : "ltr";
   const [openNewSearchDialog, setOpenNewSearchDialog] =
     useState<boolean>(false);
@@ -40,17 +52,33 @@ const NavigationItem = ({ collapsed, onToggle }: NavigationItemProps) => {
 
   const navigationItems = [
     {
-      title: t("sidebar.newChat"),
-      icon: Plus,
+      title: t("sidebar.dashboard"),
+      icon: LayoutDashboard,
       action: true,
-      onClick: handleNewChat,
+      onClick: () => {
+        navigate(`/${i18n.language}/dashboard`);
+      },
     },
-    { title: t("sidebar.search"), icon: Search, onClick: handleSearch },
-    { title: t("sidebar.library"), icon: Library, onClick: handleLibrary },
     {
-      title: t("sidebar.createFolder"),
-      icon: FolderPlus,
-      onClick: handleCreateFolder,
+      title: t("sidebar.costCota"),
+      icon: DollarSign,
+      onClick: () =>
+        navigate(`/${i18n.language}/cost-and-quota`),
+    },
+    {
+      title: t("sidebar.userManagement"),
+      icon: Users,
+      onClick: () => navigate(`/${i18n.language}/user-management`),
+    },
+    {
+      title: t("sidebar.roleManagement"),
+      icon: Cog,
+      onClick: () => navigate(`/${i18n.language}/role-management`),
+    },
+    {
+      title: t("sidebar.userFeedback"),
+      icon: MessageSquareWarning,
+      onClick: () => navigate(`/${i18n.language}/user-feedback`),
     },
   ];
 

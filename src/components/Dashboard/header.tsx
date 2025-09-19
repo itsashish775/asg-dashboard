@@ -1,13 +1,8 @@
 import { useState } from "react";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
 import { AppSidebar } from "./sidebar";
 import DarkModeToggle from "../DarkModToggle";
 import LanguageSwitcher from "../LanguageSwitcher";
@@ -50,23 +45,8 @@ export function DashboardHeader({
           <Menu className='h-4 w-4' />
         </Button>
 
-        {/* Model Selector */}
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant='outline' className='gap-2'>
-              <span className='w-2 h-2 bg-green-500 rounded-full'></span>
-              GPT-4o Mini
-              <ChevronDown className='h-4 w-4' />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem>GPT-4o Mini</DropdownMenuItem>
-            <DropdownMenuItem>GPT-4o</DropdownMenuItem>
-            <DropdownMenuItem>GPT-3.5 Turbo</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <div className='font-bold text-2xl px-4'>Dashboard</div>
       </div>
-
       <div className='flex items-center gap-4'>
         {/* Language Selector */}
 

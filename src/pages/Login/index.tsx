@@ -39,7 +39,7 @@ const Login: React.FC = () => {
       // After successful login → redirect
       if (result.success) {
         toast.success("Login successful!");
-        navigate(`/${i18n.language}/chat`);
+        navigate(`/${i18n.language}/dashboard`);
       }
     } catch (error) {
       toast.error("Login failed. Please try again.");
@@ -125,11 +125,11 @@ const Login: React.FC = () => {
         <div className='mt-6 text-center' dir={currentLanguageDirection}>
           <div className='mt-4 text-xs text-muted-foreground'>
             © Alsulaiman Group 2025. {t("login.rights")}
-            <a href='/#' className='text-cyan-500 hover:underline'>
+            <a href='/#' className='text-cyan-500 hover:underline mx-1'>
               Privacy Policy
             </a>{" "}
             ·{" "}
-            <a href='/#' className='text-cyan-500 hover:underline'>
+            <a href='/#' className='text-cyan-500 hover:underline mx-1'>
               Terms and Conditions
             </a>
           </div>

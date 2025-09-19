@@ -14,11 +14,13 @@
       "or": "OR"
     },
     "sidebar": {
-      "newChat": "New Chat",
-      "search": "Search",
-      "library": "Library",
-      "createFolder": "Create Folder",
-      "recentItems": "Recent"
+      "dashboard": "dashboard",
+      "costCota": "Cost & Quota",
+      "userManagement": "User Management",
+      "roleManagement": "Role Management",
+      "userFeedback": "User Feedback",
+      "configuration": "Configuration",
+      "systemConfiguration": "System Configuration"
     }
   }
 }

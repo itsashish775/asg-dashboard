@@ -17,7 +17,7 @@ export const PublicOnly: React.FC = () => {
 
   // ✅ If profile exists, user is authenticated → redirect
   if (data && !error) {
-    return <Navigate to={`/${i18n.language}/chat`} replace />;
+    return <Navigate to={`/${i18n.language}/dashboard`} replace />;
   }
 
   // ❌ If error (401/403), user is not authenticated → allow public pages

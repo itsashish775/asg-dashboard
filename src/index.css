@@ -8,6 +8,8 @@
   --radius-md: calc(var(--radius));
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius));
+  --color-table-header: var(--table-header);
+  --color-table-row: var(--table-row);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -52,8 +54,10 @@
 
 :root {
   --radius: 0.625rem;
+  --table-header: #E9E7E7;
+  --table-row: #E9E7E7;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: #000000;
   --card: #FFFFFF70;
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -99,8 +103,10 @@
 }
 
 .dark {
+  --table-header: #1F1F1F;
+  --table-row: #1F1F1F;
   --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --foreground: #FFFFFF;
   --card: #2E2E2E70;
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);

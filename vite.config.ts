@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
  server: {
-    port: 3000, // 👈 custom port
+    port: 3001, // 👈 custom port
     strictPort: true, // optional: fail if port 3000 is busy
   },
 })

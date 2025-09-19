@@ -14,11 +14,13 @@
       "or": "या"
     },
     "sidebar": {
-      "newChat": "नई चैट",
-      "search": "खोज",
-      "library": "पुस्तकालय",
-      "createFolder": "फ़ोल्डर बनाएँ",
-      "recentItems": "हाल ही में"
+      "dashboard": "डैशबोर्ड",
+      "costCota": "लागत और कोटा",
+      "userManagement": "उपयोगकर्ता प्रबंधन",
+      "roleManagement": "भूमिका प्रबंधन",
+      "userFeedback": "उपयोगकर्ता प्रतिक्रिया",
+      "configuration": "कॉन्फ़िगरेशन",
+      "systemConfiguration": "सिस्टम कॉन्फ़िगरेशन"
     }
   }
 }

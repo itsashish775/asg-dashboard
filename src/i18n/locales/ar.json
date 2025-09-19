@@ -14,11 +14,13 @@
       "or": "أو"
     },
     "sidebar": {
-      "newChat": "دردشة جديدة",
-      "search": "بحث",
-      "library": "المكتبة",
-      "createFolder": "إنشاء مجلد",
-      "recentItems": "الأخيرة"
+      "dashboard": "لوحة التحكم",
+      "costCota": "التكلفة والحصة",
+      "userManagement": "إدارة المستخدمين",
+      "roleManagement": "إدارة الأدوار",
+      "userFeedback": "ملاحظات المستخدم",
+      "configuration": "الإعدادات",
+      "systemConfiguration": "إعدادات النظام"
     }
   }
 }
